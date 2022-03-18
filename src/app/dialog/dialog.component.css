@@ -1,5 +1,7 @@
 
 .modal-form {
-  display: flex;
+  /* display: flex; */
   
+  width: 600px;
+
 }
