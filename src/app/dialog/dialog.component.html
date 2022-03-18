@@ -10,7 +10,7 @@
             <h5 class="modal-title" id="modalLabel">Personal details</h5>
           </div>
           <div class="modal-body">
-            <form class="modal-form" [formGroup]="formValue">
+            <form class="modal-form" [formGroup]="vaccandform" (ngSubmit)="SaveCandidate()">
               <div class="modal-field">
                 <label for="inputName" class="form-label">Name</label>
                 <input type="text" formControlName="name" class="form-control" id="inputName">

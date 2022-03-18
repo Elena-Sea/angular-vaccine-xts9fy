@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {FormBuilder, FormGroup} from '@angular/forms'
+import {FormBuilder, FormGroup, FormControl} from '@angular/forms'
 
 @Component({
   selector: 'app-dialog',
@@ -13,15 +13,18 @@ export class DialogComponent implements OnInit {
 
   ngOnInit() {
 
-    this.formValue = this.formbuilder.group({
-      name : [''],
-      surname : [''],
-      birthday : [''],
-      email : [''],
-      tel : ['']
+  }
 
-    })
+  vaccandform=new FormGroup({
+    name:new FormControl(),
+    surname:new FormControl(),
+    birthday:new FormControl(),
+    email:new FormControl(),
+    tel:new FormControl(),
+  });
 
+  SaveCandidate(){
+    console.log(this.vaccandform.value);
   }
 
 }
