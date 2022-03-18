@@ -10,26 +10,26 @@
             <h5 class="modal-title" id="modalLabel">Personal details</h5>
           </div>
           <div class="modal-body">
-            <form class="modal-form">
+            <form class="modal-form" [formGroup]="formValue">
               <div class="modal-field">
                 <label for="inputName" class="form-label">Name</label>
-                <input type="text" class="form-control" id="inputName">
+                <input type="text" formControlName="name" class="form-control" id="inputName">
               </div>
               <div class="modal-field">
                 <label for="inputSurname" class="form-label">Surname</label>
-                <input type="text" class="form-control" id="inputSurname">
+                <input type="text" formControlName="surname" class="form-control" id="inputSurname">
               </div>
               <div class="modal-field">
                 <label for="inputBirthday" class="form-label">Birthday</label>
-                <input type="date" class="form-control" id="inputBirthday">
+                <input type="date" formControlName="birthday" class="form-control" id="inputBirthday">
               </div>
               <div class="modal-field">
                 <label for="inputEmail" class="form-label">Email</label>
-                <input type="email" class="form-control" id="inputEmail">
+                <input type="email" formControlName="email" class="form-control" id="inputEmail">
               </div>
               <div class="modal-field">
                 <label for="inputTel" class="form-label">Phone number</label>
-                <input type="tel" class="form-control" id="inputTel">
+                <input type="tel" formControlName="tel" class="form-control" id="inputTel">
               </div>
               <div>
                 <label for="complication">Do you have any chronic health condition?</label>

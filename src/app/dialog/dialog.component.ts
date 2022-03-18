@@ -12,6 +12,16 @@ export class DialogComponent implements OnInit {
   constructor(private formbuilder: FormBuilder) { }
 
   ngOnInit() {
+
+    this.formValue = this.formbuilder.group({
+      name : [''],
+      surname : [''],
+      birthday : [''],
+      email : [''],
+      tel : ['']
+
+    })
+
   }
 
 }
