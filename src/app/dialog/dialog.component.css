@@ -1,7 +1,14 @@
+.modal.fade {
+  width: 400px;
+}
+
+.modal-title {
+  font-size: 20px;
+}
 
 .modal-form {
   /* display: flex; */
   
-  width: 600px;
+  /* width: 600px; */
 
 }
