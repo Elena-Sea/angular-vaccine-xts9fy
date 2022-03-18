@@ -3,12 +3,34 @@
 }
 
 .modal-title {
-  font-size: 20px;
+  font-size: 16px;
 }
 
-.modal-form {
-  /* display: flex; */
-  
-  /* width: 600px; */
+ol {
+  list-style-type: upper-roman;
+  padding-inline-start: 0;
+}
 
+.modal-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.modal-field.check {
+  flex-direction: row-reverse;
+  align-items: baseline;
+}
+
+.modal-field.check input{
+  margin-right: 10px;
+}
+.modal-field input {
+  margin: 0;
+  padding: 6px 10px;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: space-between;
 }
