@@ -11,7 +11,8 @@ ol {
   padding-inline-start: 0;
 }
 
-.modal-field {
+.modal-field,
+.vaccine-last {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
@@ -28,6 +29,11 @@ ol {
 .modal-field input {
   margin: 0;
   padding: 6px 10px;
+}
+
+textarea {
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 .modal-footer {

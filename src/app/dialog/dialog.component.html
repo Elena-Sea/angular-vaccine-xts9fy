@@ -5,7 +5,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <ol>
-        <li class="order-number">
+        <li class="">
           <div class="modal-header">
             <h5 class="modal-title" id="modalLabel">Personal details</h5>
           </div>
@@ -33,14 +33,26 @@
               </div>
               <div>
                 <label for="complication">Do you have any chronic health condition?</label>
-                <textarea name="complication" id="complication" rows="5">
+                <textarea name="complication" id="complication" rows="3" >
                 </textarea>
               </div>
             </form>
           </div>
         </li>
-        <li class="order-number">
-          <select></select>
+        <li class="vaccine-last">
+          <label for="vaccine">Which medicine were you vaccinated last?
+          </label>
+          <select name="vaccine" id="vaccine">
+            <option value="xs">Pfizer/BioNTech Comirnaty</option>
+            <option value="s">SII/COVISHIELD and AstraZeneca/AZD1222</option>
+            <option value="m" selected>Janssen/Ad26.COV 2.S</option>
+            <option value="l">Moderna</option>
+            <option value="xs">Sinopharm</option>
+            <option value="s">Sinovac-CoronaVac</option>
+            <option value="m" selected>Bharat Biotech BBV152 COVAXIN</option>
+            <option value="l">Covovax (NVX-CoV2373)</option>
+            <option value="l">Nuvaxovid (NVX-CoV2373)</option>
+          </select>
         </li>
       </ol>
     </div>
