@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {FormBuilder, FormGroup} from '@angular/forms'
 
 @Component({
   selector: 'app-dialog',
@@ -7,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DialogComponent implements OnInit {
 
-  constructor() { }
+  formValue !: FormGroup;  
+  constructor(private formbuilder: FormBuilder) { }
 
   ngOnInit() {
   }
